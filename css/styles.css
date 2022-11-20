@@ -1,0 +1,596 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@font-face {
+  font-family: "japones";
+  src: url("../fonts/Amiri_Quran_Noto_Sans_JP/Amiri_Quran/AmiriQuran-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: rgb(9, 15, 21);
+}
+header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  position: fixed;
+  margin-top: -370px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    56deg,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(220, 20, 60, 0.7906512946975666) 100%
+  );
+  border-bottom: solid 3px crimson;
+  z-index: 2;
+}
+header div img {
+  width: 70px;
+  margin-left: -850px;
+}
+header nav {
+  display: flex;
+  margin-top: -5px;
+}
+header nav i {
+  font-size: 15px;
+  color: crimson;
+  margin-right: 5px;
+}
+header nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+header nav a:hover {
+  border-bottom: 0.5px solid crimson;
+  border-radius: 5px;
+}
+.principal img {
+  height: 200px;
+  width: 200px;
+  border: 0.1px solid rgb(213, 51, 51);
+  border-radius: 550px;
+  padding: 0px;
+  margin-left: 450px;
+  margin-top: -200px;
+}
+.principal .foto {
+  margin-top: -60px;
+}
+main {
+  margin-top: -50px;
+}
+.principal {
+  color: white;
+  margin-left: 425px;
+  margin-top: 420px;
+}
+.principal h1 {
+  margin-top: 280px;
+  margin-right: 786px;
+  margin-bottom: -10px;
+  transform: rotate(-90deg);
+  z-index: -9;
+}
+.principal span {
+  color: crimson;
+}
+.principal .texto p {
+  width: 235px;
+  text-align: left;
+  margin-left: 200px;
+  margin-top: -167px;
+}
+.principal .curri {
+  margin-top: 50px;
+}
+.principal p::target-text {
+  color: crimson;
+}
+.principal a {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 5px;
+  height: 30px;
+  width: 250px;
+  background-color: white;
+  text-decoration: none;
+  color: crimson;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.principal a:hover {
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.sobremi,
+.porta,
+.contacto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 239px;
+  color: white;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.porta {
+  margin-top: 225px;
+}
+.contacto {
+  margin-top: 140px;
+}
+.descripcion p,
+.porta p,
+.contacto p {
+  margin-top: 30px;
+}
+.descripcion p span {
+  color: crimson;
+}
+.descripcion h2,
+.porta h2,
+.contacto h2 {
+  font-size: 50px;
+  cursor: default;
+  margin-top: -90px;
+  font-family: "japones";
+}
+
+.dain {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 600px;
+  align-items: center;
+}
+
+.datos {
+  margin-left: 90px;
+}
+.datos h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-right: 250px;
+}
+table {
+  margin-top: 20px;
+}
+table td:nth-child(2n + 1) {
+  color: crimson;
+}
+td {
+  padding-right: 60px;
+  padding-bottom: 10px;
+}
+.intereses {
+  margin-left: -200px;
+  margin-top: -25px;
+}
+.intereses h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.iconos {
+  display: grid;
+  grid-template-columns: 110px auto;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  background-color: blueviolet;
+  text-align: center;
+  border-radius: 5px;
+  color: crimson;
+  background-color: white;
+}
+.icon1,
+.icon2 {
+  margin-bottom: 5px;
+}
+i {
+  margin-bottom: 4px;
+}
+.icon1:hover {
+  background-color: crimson;
+  color: white;
+  cursor: default;
+}
+.icon2:hover {
+  background-color: crimson;
+  color: white;
+  cursor: default;
+}
+.icon3:hover {
+  background-color: crimson;
+  color: white;
+  cursor: default;
+}
+.icon4:hover {
+  background-color: crimson;
+  color: white;
+  cursor: default;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 250px 250px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cards div {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: 200px 208px;
+  background-position-y: -3px;
+  justify-content: center;
+  align-items: center;
+}
+.cards a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 50px;
+}
+.cards .card1 {
+  background-image: url(../img/img1.jpg);
+}
+.cards .card2 {
+  background-image: url(../img/img2.jpg);
+}
+.cards .card3 {
+  background-image: url(../img/img3.jpg);
+}
+.cards .card4 {
+  background-image: url(../img/img4.jpg);
+}
+.cards .card5 {
+  background-image: url(../img/img5.jpg);
+}
+.cards .card6 {
+  background-image: url(../img/jpg6.jpg);
+}
+.cards div:hover {
+  border-radius: 500px;
+  box-shadow: 0px 0px 10px 3px crimson;
+  border: none;
+}
+.barras {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 30px;
+  margin-right: 150px;
+}
+.solicitud {
+  margin-top: 75px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.solicitud input {
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(9, 15, 21);
+  position: relative;
+}
+.solicitud textarea {
+  margin-bottom: 10px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(9, 15, 21);
+}
+.solicitud .fa-user {
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+.solicitud .fa-phone {
+  position: absolute;
+  font-size: 12px;
+  margin-top: 49px;
+  margin-left: 10px;
+}
+.solicitud .fa-at {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 88px;
+}
+.solicitud .fa-envelope {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 260px;
+}
+.solicitud button {
+  position: relative;
+  height: 40px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: crimson;
+  font-size: 20px;
+}
+.solicitud button:hover {
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+}
+.solicitud .fa-paper-plane {
+  position: absolute;
+  margin-top: 309px;
+  margin-left: 12px;
+  color: white;
+}
+
+.redes {
+  margin-left: 150px;
+  width: 456px;
+  margin-top: -10px;
+}
+.redes p {
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.redes span,
+.directo span,
+.porta span {
+  color: crimson;
+  font-size: 25px;
+}
+.redes div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 15px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.redes .facebook:hover {
+  background-color: rgb(59, 89, 152);
+  border: 2px solid white;
+}
+.redes .instagram:hover {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: 2px solid white;
+}
+.redes .tuiter:hover {
+  background-color: rgb(00, 172, 238);
+  border: 2px solid white;
+}
+.redes i {
+  font-size: 30px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.directo {
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-top: 3px solid crimson;
+  text-align: center;
+  color: white;
+}
+.canal {
+  margin-top: 10px;
+}
+.directo p {
+  font-size: 17px;
+}
+.canal i {
+  margin: 5px;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.fa-youtube {
+  color: rgb(196, 48, 43);
+}
+.fa-twitch {
+  color: rgb(100, 65, 165);
+}
+
+/* animación */
+.border,
+.wave {
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -30px;
+}
+.border {
+  color: white;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+.wave {
+  color: crimson;
+  animation: wave 3s ease-in-out infinite;
+}
+.two {
+  transform: translateY(0.8em);
+}
+.three {
+  transform: translateY(-0.8em);
+}
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+/* responsif */
+@media (max-width: 1316px) {
+  header {
+    height: 30vh;
+  }
+  header div img {
+    margin-right: -700px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav a {
+    margin: 5px;
+  }
+  main .principal {
+    margin-left: -100px;
+    font-size: 12px;
+    width: 100%;
+  }
+  main .principal h1 {
+    margin-left: 10px;
+    margin-bottom: 100px;
+    width: 308px;
+  }
+  main .principal img {
+    width: 80px;
+    height: 80px;
+    margin-left: 275px;
+    margin-bottom: 110px;
+  }
+  .sobremi,
+  .porta,
+  .contacto {
+    width: 100%;
+  }
+  .sobremi .descripcion h2 {
+    width: 250px;
+    margin-left: 100px;
+  }
+  .sobremi .descripcion p {
+    width: 250px;
+    margin-left: 100px;
+  }
+  .sobremi .dain {
+    display: block;
+  }
+  .sobremi .dain .datos h3 {
+    margin-left: 25px;
+    width: 220px;
+  }
+  .sobremi .dain .intereses h3 {
+    margin-right: 650px;
+    margin-top: 100px;
+    margin-left: 310px;
+    width: 220px;
+  }
+  .sobremi .dain .iconos {
+    margin-left: 315px;
+  }
+  .porta h2 {
+    width: 250px;
+    margin-left: 125px;
+  }
+  .porta p {
+    width: 250px;
+    margin-left: 120px;
+  }
+  .porta .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 1500px;
+    margin-top: 20px;
+  }
+  .contacto h2 {
+    width: 250px;
+    margin-left: 125px;
+  }
+  .contacto p {
+    width: 250px;
+    margin-left: 125px;
+  }
+  .contacto .barras {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: -40px;
+  }
+  .contacto .redes p {
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .contacto .solicitud {
+    width: 200px;
+    margin-left: 130px;
+  }
+  .redes {
+    width: 220px;
+  }
+  .redes p {
+    margin-left: -50px;
+    width: 260px;
+  }
+  .contacto .redes div {
+    width: 50px;
+    margin-left: 50px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+}
